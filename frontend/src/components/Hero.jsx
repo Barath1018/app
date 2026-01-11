@@ -39,12 +39,44 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <button onClick={scrollToContact} className="px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center gap-2" style={{ backgroundColor: '#d9fb06', color: '#1a1c1b' }} onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.02)'} onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}>
+            <button
+              onClick={scrollToContact}
+              className="px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center gap-2"
+              style={{ backgroundColor: '#d9fb06', color: '#1a1c1b' }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.02)')}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+            >
               Get In Touch
               <ArrowRight size={20} />
             </button>
-            <a href={personal.resumeUrl} className="px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center" style={{ border: '1px solid #d9fb06', color: '#d9fb06', backgroundColor: 'transparent' }} onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#d9fb06'; e.currentTarget.style.color = '#1a1c1b'; }} onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = '#d9fb06'; }}>
+
+            <a
+              href={personal.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
+              style={{ border: '1px solid #d9fb06', color: '#d9fb06', backgroundColor: 'transparent' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#d9fb06';
+                e.currentTarget.style.color = '#1a1c1b';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = '#d9fb06';
+              }}
+            >
               View Resume
+            </a>
+
+            <a
+              href={personal.resumeUrl}
+              download
+              className="px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 inline-flex items-center justify-center"
+              style={{ border: '1px solid #d9fb06', color: '#1a1c1b', backgroundColor: '#d9fb06' }}
+              onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.02)')}
+              onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+            >
+              Download Resume
             </a>
           </div>
 

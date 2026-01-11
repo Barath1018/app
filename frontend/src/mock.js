@@ -3,19 +3,19 @@
 export const portfolioData = {
   // Personal Information
   personal: {
-    name: "Alex Chen",
-    title: "Full Stack Developer",
+    name: "Barath S",
+    title: "Creative Web Developer & Video Editor",
     tagline: "Building scalable web applications with modern technologies",
     bio: "I'm a passionate full-stack developer with 5+ years of experience creating robust web applications. I specialize in React, Node.js, and cloud technologies, with a focus on clean code and user experience.",
-    email: "alex.chen@example.com",
-    location: "San Francisco, CA",
-    resumeUrl: "#"
+    email: "barath.senthil1602@gmail.com",
+    location: "Manampathy, Tamil Nadu, India",
+    resumeUrl: "/Barath's_Resume.pdf"
   },
 
   // Social Links
   socials: [
-    { name: "GitHub", url: "https://github.com", icon: "Github" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" },
+    { name: "GitHub", url: "https://github.com/Barath1018", icon: "Github" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/barath-senthil-933b03294/", icon: "Linkedin" },
     { name: "Twitter", url: "https://twitter.com", icon: "Twitter" }
   ],
 
@@ -39,12 +39,12 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Business Intelligence Dashboard",
       description: "A full-featured e-commerce platform with real-time inventory management, payment processing, and order tracking.",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://insightedge-bid.vercel.app/",
+      githubUrl: "https://github.com/Barath1018/InsightEdge"
     },
     {
       id: 2,
